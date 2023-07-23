@@ -1,16 +1,22 @@
 <?php
 
-class NewsModel extends Model {
+namespace App\Models;
 
-    public function getNewsCount() {
+use \PDO;
+
+class NewsModel extends Model
+{
+    public function getNewsCount() 
+    {
         $sql = "SELECT COUNT(*) FROM news";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
         $res = $stmt->fetchColumn();
         return $res;
     }
-	
-	public function getNews($page, $limit) {
+    
+    public function getNews($page, $limit)
+    {
         $offset = ($page - 1) * $limit;
         $sql = "SELECT id, date, title, announce FROM news ORDER BY date DESC LIMIT ? OFFSET ?";
         $stmt = $this->db->prepare($sql);
@@ -21,7 +27,8 @@ class NewsModel extends Model {
         return $res;        
     }
 
-    public function getNewsById($id) {
+    public function getNewsById($id)
+    {
         $sql = "SELECT * FROM news WHERE id = $id";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
@@ -29,7 +36,8 @@ class NewsModel extends Model {
         return $res;
     }
 
-    public function getLastNews() {
+    public function getLastNews()
+    {
         $sql = "SELECT title, announce, image FROM news ORDER BY date DESC LIMIT 1";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
