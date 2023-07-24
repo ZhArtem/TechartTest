@@ -1,4 +1,4 @@
 # TechartTest
 
-![2023-06-20_18-36-07](https://github.com/ZhArtem/TechartTest/assets/114347290/167de61c-0df9-4f10-8f31-179fd12a7409)
-![2023-06-20_18-37-16](https://github.com/ZhArtem/TechartTest/assets/114347290/041a0726-8c41-4536-86f7-8f3468d82ef0)
+![2023-07-24_21-03-02](https://github.com/ZhArtem/TechartTest/assets/114347290/663efe83-0d01-44f4-822b-20fb418244d8)
+![2023-07-24_21-04-54](https://github.com/ZhArtem/TechartTest/assets/114347290/7a84a76d-3bb9-494b-9630-4d0e45b32bf6)
